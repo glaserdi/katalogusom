@@ -2,24 +2,25 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>Katalógus</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="turn.min.js"></script>
+  <title>Katalógus - Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
   <style>
     body {
-      background: #ccc;
+      background: #e5e5e5;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
     #flipbook {
-      width: 800px;
-      height: 500px;
+      width: 1000px;
+      height: 650px;
     }
     #flipbook .page {
-      width: 400px;
-      height: 500px;
+      width: 500px;
+      height: 650px;
     }
     #flipbook .page img {
       width: 100%;
@@ -30,25 +31,22 @@
 </head>
 <body>
   <div id="flipbook">
-    <div class="page"><img src="page1.jpg"></div>
-    <div class="page"><img src="page2.jpg"></div>
-    <div class="page"><img src="page3.jpg"></div>
-    <div class="page"><img src="page4.jpg"></div>
-    <div class="page"><img src="page5.jpg"></div>
-    <div class="page"><img src="page6.jpg"></div>
-    <div class="page"><img src="page7.jpg"></div>
-    <div class="page"><img src="page8.jpg"></div>
-    <!-- Ide jöhetnek további oldalak -->
+    <div class="page"><img src="pages/page1.jpg" alt="Oldal 1"></div>
+    <div class="page"><img src="pages/page2.jpg" alt="Oldal 2"></div>
+    <div class="page"><img src="pages/page3.jpg" alt="Oldal 3"></div>
+    <div class="page"><img src="pages/page4.jpg" alt="Oldal 4"></div>
+    <div class="page"><img src="pages/page5.jpg" alt="Oldal 5"></div>
+    <div class="page"><img src="pages/page6.jpg" alt="Oldal 6"></div>
+    <div class="page"><img src="pages/page7.jpg" alt="Oldal 7"></div>
+    <div class="page"><img src="pages/page8.jpg" alt="Oldal 8"></div>
   </div>
 
   <script>
     $("#flipbook").turn({
-      width: 800,
-      height: 500,
+      width: 1000,
+      height: 650,
       autoCenter: true
     });
   </script>
 </body>
-
 </html>
-
